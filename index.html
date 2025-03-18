@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+	<title>Video Player plyr.js</title>
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+	<script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
 </head>
-
 <body>
+	<h1>Welcome to website</h1>
 
-  <br>
 
-    <video>src="kk.mp4"</video>
-  
-  
-  
-  <a href="https://youtu.be/mbgttOOp744?si=ZcDg4QMwAPV17shB">Kundan</a>
-  <a href="https://youtu.be/tHy_mtrgIb0?si=8vD_Jr7lmdq1pkQI">https://youtu.be/tHy_mtrgIb0?si=8vD_Jr7lmdq1pkQI</a>
-  <a href="https://t.me/sahilsirmathbatch/940">https://t.me/sahilsirmathbatch/940</a>
+	<div class="container">
+	<video controls crossorigin playsinline poster="img.png">
+	  
+	  
+	  
+		 <source src="kkk.mp4" type="video/mp4" size="480">
+		 
+		  <source src="kkk.mp4" type="video/mp4" size="360">
+		  
+		   <source src="kkk.mp4" type="video/mp4" size="720">
+		   
+		    <source src="kkk.mp4" type="video/mp4" size="1080">
+		    
+		     <source src="kkk.mp4" type="video/mp4" size="1440">
+		     
+		      <source src="kkk.mp4" type="video/mp4" size="2160">
+
+ <source src="kkk.mp4" type="video/mp4" size="4320">
+
+			<!-- Fallback for browsers that don't support the <video> element -->
+			<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+	</video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+
+<style type="text/css">
+	.container {
+	margin: 50px auto;
+	max-width: 500px;
+}
+</style>
+
+<script type="text/javascript">
+	const player = new Plyr('video', {captions: {active: true}});
+
+// Expose player so it can be used from the console
+window.player = player;
+</script>
+
 </body>
-
 </html>
